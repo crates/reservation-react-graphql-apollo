@@ -1,0 +1,95 @@
+.c-res-form__container {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.c-res-form__grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr min-content;
+  grid-template-areas:
+    'name name name'
+    'hotel hotel hotel'
+    'arrivaltext departuretext none'
+    'arrival departure book';
+}
+@media only screen and (max-width: 600px) {
+  .c-res-form__grid {
+    grid-template-areas:
+      'name name name'
+      'hotel hotel hotel'
+      'arrivaltext arrivaltext arrivaltext'
+      'arrival arrival arrival'
+      'departuretext departuretext departuretext'
+      'departure departure departure'
+      'book book book';
+  }
+}
+
+.c-res-form__name {
+  grid-area: name;
+}
+.c-res-form_hotel-name {
+  grid-area: hotel;
+}
+.c-res-form__arrival {
+  grid-area: arrival;
+}
+.c-res-form__departure {
+  grid-area: departure;
+}
+.c-res-form__arrival-text {
+  grid-area: arrivaltext;
+  padding: 0 1rem;
+  font-size: 80%;
+  color: #480048;
+}
+.c-res-form__departure-text {
+  grid-area: departuretext;
+  padding: 0 1rem;
+  font-size: 80%;
+  color: #480048;
+}
+.c-res-form__book {
+  grid-area: book;
+}
+.c-res-form__button {
+  background-color: #480048;
+  font-size: 100%;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0 2rem;
+  height: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .c-res-form__button {
+    width: 100%;
+  }
+}
+.c-res-form__button--invalid,
+.c-res-form__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.c-res-form__input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 0 1rem;
+  height: 3rem;
+  min-height: 3rem;
+  font-size: 100%;
+  font-weight: 300;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+select.c-res-form__input {
+  appearance: none;
+}
+.c-res-form__input:focus {
+  outline: none;
+}

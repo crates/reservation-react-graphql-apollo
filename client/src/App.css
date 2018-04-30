@@ -1,0 +1,27 @@
+.App {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4em 1em;
+  font-weight: 300;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.c-header {
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Roboto Condensed', 'Helvetica Neue', Arial, Helvetica,
+    sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.flash {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: rgb(169, 247, 169);
+  padding: 1em 0;
+  text-align: center;
+  border-radius: 10px;
+}

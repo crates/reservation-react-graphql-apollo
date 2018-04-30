@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100%;
+}
+
+body {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #357fd8;
+  background-image: url(./beach.webp);
+  height: 100%;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "reservation-react-graphql-apollo-server",
+  "version": "0.0.1",
+  "description": "Reservation service with Claudia, GraphQL and DynamoDB",
+  "scripts": {
+    "transpile": "rm -rf ./dist && babel --presets es2015 src --out-dir dist",
+    "create": "yarn run transpile && claudia create --name reservations-claudia --region us-east-1 --api-module dist/index --policies policies --runtime nodejs8.10",
+    "deploy": "yarn run transpile && claudia update --runtime nodejs8.10 --profile reservations-claudia"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "8.11.1"
+  },
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "cr8s",
+  "repository": {
+    "type": "git",
+    "url": "git+https://"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.27",
+    "claudia-api-builder": "^3",
+    "fetch-ponyfill": "^6.0.1",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^2.23.1",
+    "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "claudia": "^3"
+  }
+}

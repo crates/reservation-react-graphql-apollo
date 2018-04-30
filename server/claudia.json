@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "reservations-claudia-executor",
+    "name": "reservations-claudia",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "fyuhzcdpwa",
+    "module": "dist/index"
+  }
+}

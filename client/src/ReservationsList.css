@@ -1,0 +1,39 @@
+.c-reservations__container {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.c-reservations__res {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-areas:
+    'name dates'
+    'hotel dates';
+  padding: 1em;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.c-reservations__res:first-child {
+  border-top: none;
+}
+.c-reservations__name {
+  grid-area: name;
+  margin-bottom: 1rem;
+}
+.c-reservations__hotel-name {
+  grid-area: hotel;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.7);
+}
+.c-reservations__dates {
+  grid-area: dates;
+  align-self: center;
+  text-align: center;
+  font-size: 80%;
+}
+.c-reservations--nowrap {
+  white-space: nowrap;
+}
